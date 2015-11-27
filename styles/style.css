@@ -1,0 +1,117 @@
+/* CSS RESET 2.0 */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure,
+figcaption, footer, header, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+body {
+
+}
+
+ol, ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* END CSS RESET 2.0 */
+.set-indent {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/* хедер */
+header {
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background: #151515;
+  font-family: 'pt_sansregular', sans-serif;
+}
+
+.header__site-logo {
+  display: inline-block;
+  width: 170px;
+  height: 100%;
+  background: url('../imgs/logo-ver2.svg') no-repeat center;
+  background-size: contain;
+}
+
+.header__reg-or-login {
+  display: none;
+}
+
+/** иконка-переключатель бургер-меню **/
+.header__nav-toggle {
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 15px;
+  width: 35px;
+  height: 25px; /* width/1.4 */
+  cursor: pointer;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+  -o-transition: .2s;
+  transition: .2s;
+}
+
+.nav-toggle__burger {
+  position: absolute;
+  top: 40%;
+  width: 100%;
+  height: 20%;
+  background: #ccc;
+  border-radius: 2px;
+}
+
+.nav-toggle__burger::before, .nav-toggle__burger::after {
+  position: absolute;
+  content: '';
+  width: inherit;
+  height: 100%;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.nav-toggle__burger::before {
+  top: -200%;
+}
+
+.nav-toggle__burger:after {
+  top: 200%;
+}
+
+/**конец иконка-переключатель бургер-меню **/
+
+.nav-full {
+  display: none;
+}
+
+/*конец хедер */
+
+.nav-mobile {
+  width: 100%;
+  background: #202d3a;
+}
+
+.nav-mobile__item {
+  display: block;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid gray;
+  color: white;
+  font-family: 'Bebas-Neue', sans-serif;
+}
