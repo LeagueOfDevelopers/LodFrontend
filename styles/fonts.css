@@ -1,21 +1,32 @@
 @font-face {
   font-family: 'PTsans';
-  src: url('../fonts/pt_sans-webfont.eot');
-  src: url('../fonts/pt_sans-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/pt_sans-webfont.woff2') format('woff2'),
-  url('../fonts/pt_sans-webfont.woff') format('woff'),
-  url('../fonts/pt_sans-webfont.ttf') format('truetype');
+  src: url('../fonts/ptsans-regular.eot');
+  src: url('../fonts/ptsans-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ptsans-regular.woff2') format('woff2'),
+  url('../fonts/ptsans-regular.woff') format('woff'),
+  url('../fonts/ptsans-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Bebas-Neue';
-  src: url('../fonts/bebasneue_regular-webfont.eot');
-  src: url('../fonts/bebasneue_regular-webfont.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
-  url('../fonts/bebasneue_regular-webfont.woff') format('woff'),
-  url('../fonts/bebasneue_regular-webfont.ttf') format('truetype');
+  font-family: 'Bitter';
+  src: url('../fonts/bitter-bold.eot');
+  src: url('../fonts/bitter-bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bitter-bold.woff2') format('woff2'),
+  url('../fonts/bitter-bold.woff') format('woff'),
+  url('../fonts/bitter-bold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Bebas';
+  src: url('../fonts/bebasneue-regular.eot');
+  src: url('../fonts/bebasneue-regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/bebasneue-regular.woff2') format('woff2'),
+  url('../fonts/bebasneue-regular.woff') format('woff'),
+  url('../fonts/bebasneue-regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
