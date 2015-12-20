@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Cuprum:400,700|PT+Sans:400,700|Noto+Serif:400,700&subset=latin,cyrillic);
 /* CSS RESET 2.0 */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a,
 abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike,
@@ -8,12 +9,13 @@ time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 1em;
   vertical-align: baseline;
 }
 
 body {
-
+  font-size: 1em;
+  font-family: 'PT Sans', sans-serif;
 }
 
 ol, ul {
@@ -33,7 +35,6 @@ header {
   width: 100%;
   height: 100px;
   background: #151515;
-  font-family: 'PTsans', sans-serif;
 }
 
 .header__site-logo {
@@ -93,15 +94,19 @@ header {
 
 /**конец иконка-переключатель бургер-меню **/
 
-.nav-full {
+.header__nav-full {
   display: none;
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
 }
 
 /*конец хедер */
 
 .nav-mobile {
   width: 100%;
-  background: #f1f1f1;
+  background: #ffffff;
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
 }
 
 .nav-mobile__item {
@@ -110,14 +115,97 @@ header {
   padding: 10px;
   border-bottom: 1px solid #ccc;
   color: black;
-  font-family: 'Bebas', sans-serif;
-  transition: all .3s;
+  transition: background .2s;
 }
 .nav-mobile__item:hover{
-  color: white;
-  background: #a1a1a1;
+  background: #f1f1f1;
 }
-.swiper-container {
+
+.welcome-section{
+  padding: 20px 15px;
+  box-sizing: border-box;
   width: 100%;
   height: 480px;
+
+  background: url('../imgs/mobile-main-background.jpg') no-repeat center;
+  background-size: cover;
+
+  font-size: 1em;
+}
+
+.welcome-section__headline{
+  display: block;
+  margin: 30px 0 10px 0;
+
+  font-family: 'Noto Serif', serif;
+  font-size: 1.8em;
+  font-weight: bold;
+  text-align: center;
+
+  color: #ffd200;
+}
+
+.welcome-section__paragraph{
+  display: block;
+  height: 80px;
+
+  font-size: 1.1em;
+  font-weight: 500;
+
+  color: #ffffff;
+}
+
+.button-style {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+
+  font-family: 'Cuprum', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.button-style:after {
+  content: '';
+  z-index: -1;
+  position: absolute;
+  width: 100%;
+  height: 0;
+  top: 50%;
+  left: 50%;
+
+  background: #fff;
+  opacity: 0;
+  -webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  transition: all .2s;
+}
+.button-style:hover{
+  color: #202d3a;
+}
+.button-style:hover:after {
+  height: 260%;
+  opacity: 1;
+}
+.button-style:active {
+  transform: translateY(1px)
+}
+
+.welcome-section__order-button{
+  width: 130px;
+  display: block;
+  margin: 40px auto;
+  padding: 15px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  text-align: center;
 }
