@@ -36,7 +36,8 @@ header {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 70px;
+  padding: 15px;
   background: #151515;
 }
 
@@ -69,8 +70,7 @@ header {
   display: inline-block;
   width: 170px;
   height: 100%;
-  margin-left: 15px;
-  background: url('../imgs/logo-ver2.svg') no-repeat center;
+  background: url('../imgs/logo-ver2.svg') no-repeat left;
   background-size: contain;
 }
 
@@ -85,8 +85,8 @@ header {
   top: 50%;
   transform: translateY(-50%);
   right: 15px;
-  width: 35px;
-  height: 25px; /* width/1.4 */
+  width: 30px;
+  height: 21px; /* width/1.4 */
   cursor: pointer;
   -webkit-transition: .2s;
   -moz-transition: .2s;
@@ -253,7 +253,7 @@ header {
 .projects-section {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px;
   text-align: center;
 }
 
@@ -313,7 +313,7 @@ header {
 .developers-section {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px 0;
+  padding: 15px;
   text-align: center;
 }
 
@@ -356,12 +356,33 @@ header {
   font-size: 1.2em;
 }
 .developer__photo:hover {
-  border-color: #ffd200;
+  border-color: #2980b9;
 }
 .developers-section__see-all-button{
   display: block;
   margin: 15px auto 30px auto;
 }
 footer{
-
+  box-sizing: border-box;
+  position: relative;
+  width: 100%;
+  padding: 15px;
+  background: #151515;
+  text-align: center;
+}
+.footer__signature, .footer__links, .footer__copyright{
+  display: block;
+  margin: 20px 0;
+  color: rgba(255, 255, 255, .5);
+}
+.signature__link, .links__vk, .links__contact-us{
+  color: #fff;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  transition: all .2s;
+}
+.signature__link:hover, .links__vk:hover, .links__contact-us:hover{
+  text-decoration: underline;
+  color: #2980b9;
 }
