@@ -261,6 +261,8 @@ header {
   position: relative;
   box-sizing: border-box;
   display: inline-block;
+  overflow: hidden;
+
 
   min-width: 270px;
   width: 84.375%; /* 270/320 */
@@ -275,19 +277,46 @@ header {
   background: url('../imgs/project-landscape.png') no-repeat center;
   background-size: cover;
   box-shadow: 0 0 0 #bebebe;
-  -webkit-transition: all .12s ease;
-  -moz-transition: all .12s ease;
-  -o-transition: all .12s ease;
-  transition: all .12s ease;
+  -webkit-transition: all .2s ease;
+  -moz-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
-
-.projects-section__project:hover {
-  -webkit-transform: translate(-4px, -4px);
-  -moz-transform: translate(-4px, -4px);
-  -ms-transform: translate(-4px, -4px);
-  -o-transform: translate(-4px, -4px);
-  transform: translate(-4px, -4px);
-  box-shadow: 8px 8px #bebebe;
+.project__tooltip{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  font-weight: bold;
+  text-shadow: #202d3a 0 0 3px;
+  padding-top: 500px;
+  padding-bottom: 10px;
+  color: #ffffff;
+  z-index: 3;
+  opacity:0;
+}
+.project__tooltip:hover{
+  opacity:1;
+}
+.projects-section__project:after{
+  position: absolute;
+  left:0;
+  top: 0;
+  content: '';
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top right, #ff8c00, #6200b9);
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+}
+.projects-section__project:hover:after {
+  opacity: 0.3;
 }
 
 .project__name {
@@ -295,9 +324,10 @@ header {
   position: absolute;
   width: 100%;
   text-align: left;
-  bottom: 0;
+  top: 0;
   right: 0;
   padding: 5px 10px 5px 10px;
+  z-index: 2;
 
   font-size: 1.5em;
   background-color: rgba(0, 0, 0, .8);
