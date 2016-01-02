@@ -4,12 +4,13 @@
   <link rel="stylesheet" href="./styles/style.css">
   <title>Лига разработчиков</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
 </head>
 <body>
 <header>
   <div class="header__site-logo"></div>
   <span class="header__reg-or-login">
-    <a class="reg-or-login__reg" href="">Зарегистрироваться</a>
+    <a class="reg-or-login__reg" href="">Стать разработчиком</a>
     или <a class="reg-or-login__login" href="">Войти</a>
   </span>
 
@@ -37,20 +38,34 @@
 </nav>
 <div class="content">
   <section class="welcome-section">
-    <span class="welcome-section__headline headline">Кто мы?</span>
+    <div class="welcome-section-container">
+      <span class="welcome-section__headline headline">Кто мы?</span>
     <span class="welcome-section__paragraph">Мы IT-организация, находящаяся
       в стенах национального государственного университета “МИСиС”.</span>
-    <span class="welcome-section__headline headline">Что мы делаем?</span>
+      <span class="welcome-section__headline headline">Что мы делаем?</span>
     <span class="welcome-section__paragraph">Программируем на заказ, создаём web-сайты,
       Android, iOS и desktop приложения.</span>
-    <a class="welcome-section__order-button button-style button-style--light" href="#">Сделать заказ</a>
+      <a class="welcome-section__order-button button-style button-style--light" href="#">Сделать заказ</a>
+    </div>
   </section>
   <section class="projects-section">
     <span class="projects-section__headline headline">Наши проекты</span>
     <a class="developers-section__link-to-project" href="#">
       <div class="projects-section__project">
+        <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию.</span>
+        <span class="project__name project__name--style">Imaginarium</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-project" href="#">
+      <div class="projects-section__project">
         <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию</span>
         <span class="project__name project__name--style">Imaginarium</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-project" href="#">
+      <div class="projects-section__project">
+        <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию</span>
+        <span class="project__name project__name--style">Movie-Extended</span>
       </div>
     </a>
     <a class="developers-section__link-to-project" href="#">
@@ -73,6 +88,34 @@
     </a>
     <a class="developers-section__link-to-profile" href="#">
       <div class="developers-section__developer">
+        <div class="developer__photo"></div>
+        <span class="developer__full-name">Маргелов Виталий</span>
+        <span class="developer__specialization">C# developer</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-profile" href="#">
+      <div class="developers-section__developer">
+        <div class="developer__photo"></div>
+        <span class="developer__full-name">Маргелов Виталий</span>
+        <span class="developer__specialization">C# developer</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-profile" href="#">
+      <div class="developers-section__developer">
+        <div class="developer__photo"></div>
+        <span class="developer__full-name">Маргелов Виталий</span>
+        <span class="developer__specialization">C# developer</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-profile" href="#">
+      <div class="developers-section__developer">
+        <div class="developer__photo"></div>
+        <span class="developer__full-name">Маргелов Виталий</span>
+        <span class="developer__specialization">C# developer</span>
+      </div>
+    </a>
+    <a class="developers-section__link-to-profile" href="#">
+      <div class="developers-section__developer">
         <div class="developer__photo developer--selection"></div>
         <span class="developer__full-name developer--selection">Маргелов Виталий</span>
         <span class="developer__specialization developer--selection">C# developer</span>
@@ -80,18 +123,17 @@
     </a>
     <a class="developers-section__see-all-button button-style" href="#">Смотреть всех</a>
   </section>
-  <section></section>
-  <section></section>
 </div>
 <footer>
   <span class="footer__signature">
     Сайт сделан <a href="#" class="signature__link">"Лигой разработчиков"</a>
   </span>
-    <div class="footer__links">
-      <span><a class="links__vk" href="http://vk.com/lodmisis">Мы Вконтакте </a>|</span>
-      <a href="#" class="links__contact-us">Связаться</a>
-    </div>
-  <span class="footer__copyright">League of developers 2014-<span class="copyright__this-year"></span>©</span>
+
+  <div class="footer__links">
+    <span><a class="links__vk" href="http://vk.com/lodmisis">Мы Вконтакте </a>|</span>
+    <a href="#" class="links__contact-us">Связаться</a>
+  </div>
+  <span class="footer__copyright">League of developers 2014-<span class="copyright__this-year"> </span>©</span>
 </footer>
 <script src="./js/script.js"></script>
 <script src="./js/menu-switcher.js"></script>

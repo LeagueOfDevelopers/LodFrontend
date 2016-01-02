@@ -37,7 +37,7 @@ header {
   position: relative;
   width: 100%;
   height: 70px;
-  padding: 15px;
+  padding: 0 15px;
   background: #151515;
 }
 
@@ -75,6 +75,10 @@ header {
 }
 
 .header__reg-or-login {
+  display: none;
+}
+
+.header__nav-full {
   display: none;
 }
 
@@ -167,15 +171,17 @@ header {
 }
 
 .welcome-section {
-  padding: 20px 15px;
-  box-sizing: border-box;
   width: 100%;
-  height: 480px;
 
   background: url('../imgs/mobile-main-background.jpg') no-repeat center;
   background-size: cover;
 
   font-size: 1em;
+}
+
+.welcome-section-container {
+  padding: 20px 15px;
+  box-sizing: border-box;
 }
 
 .welcome-section__headline {
@@ -185,7 +191,6 @@ header {
 
 .welcome-section__paragraph {
   display: block;
-  height: 80px;
 
   font-size: 1.1em;
   font-weight: 500;
@@ -202,6 +207,7 @@ header {
   width: 130px;
 
   font-family: 'Cuprum', sans-serif;
+  font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
 
@@ -281,6 +287,7 @@ header {
 
   min-width: 270px;
   width: 84.375%; /* 270/320 */
+  max-width: 400px;
   height: 270px;
   margin: 10px 0 10px 0;
 
@@ -301,11 +308,11 @@ header {
 .project__tooltip {
   position: absolute;
   bottom: 0;
-  right: 0;
-  width: 100%;
+  left: 2.5%;
+  width: 95%;
   font-weight: bold;
   text-shadow: #202d3a 0 0 3px;
-  padding-top: 500px;
+  padding-top: 350px;
   padding-bottom: 10px;
   color: #ffffff;
   z-index: 3;
@@ -362,16 +369,16 @@ header {
 .developers-section {
   box-sizing: border-box;
   width: 100%;
-  padding: 15px;
+  padding: 15px 0;
   text-align: center;
 }
 
 .developers-section__developer {
   box-sizing: border-box;
-  display: inline-block;
+  display: block;
   width: 240px;
+  margin: 0 auto 25px auto;
   text-align: center;
-  margin-bottom: 25px;
   cursor: pointer;
   -webkit-transition: all .2s ease;
   -moz-transition: all .2s ease;
@@ -442,4 +449,155 @@ footer {
 .signature__link:hover, .links__vk:hover, .links__contact-us:hover {
   text-decoration: underline;
   color: #2980b9;
+}
+
+@media only screen and (min-width: 640px) {
+  body {
+    font-size: 1.1em;
+  }
+
+  .welcome-section-container {
+    padding: 20px 100px;
+    text-align: left;
+  }
+
+  .welcome-section__headline {
+    text-align: left;
+    margin: 40px 0 20px 0;
+  }
+
+  .welcome-section {
+    background: url('../imgs/tablets-main-background.jpg') no-repeat center;
+  }
+
+  .projects-section__project {
+    height: 400px;
+    margin: 9px;
+  }
+
+  .developers-section__developer {
+    display: inline-block;
+    margin: 10px 20px 25px 20px;
+    width: 240px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  header {
+    height: 100px;
+    background-color: rgba(21, 21, 21, 0);
+  }
+
+  .header__site-logo {
+    width: 200px;
+  }
+
+  .header__reg-or-login {
+    display: inline-block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+
+  .header__reg-or-login > a {
+    color: rgba(255, 255, 255, 0.71);
+    margin: 0 5px;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+
+  }
+
+  .header__reg-or-login > a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  .header__nav-full > a {
+    position: relative;
+    color: white;
+    -webkit-transition: all .2s ease-out;
+    -moz-transition: all .2s ease-out;
+    -o-transition: all .2s ease-out;
+    transition: all .2s ease-out;
+  }
+
+  .header__nav-full > a:hover {
+    color: #ffd200;
+  }
+
+  .header__nav-full > a:after {
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background: #ffd200;
+    transition: all 0.2s ease-out;
+  }
+
+  .header__nav-full > a:hover:after {
+    width: 100%;
+  }
+
+  .header__nav-full {
+    display: inline-block;
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 1.3em;
+  }
+
+  .nav-full__item {
+    margin-left: 15px;
+  }
+
+  .header__nav-toggle {
+    display: none;
+  }
+
+  .nav-mobile {
+    display: none;
+  }
+
+  .developers-section, .projects-section {
+    padding: 0 40px;
+  }
+
+  .headline {
+    text-align: left;
+  }
+
+  .dividing-line {
+    width: calc(100% - 80px);
+    margin: 0 40px;
+  }
+
+  .welcome-section {
+    box-sizing: border-box;
+    margin: -100px 0 0 0;
+    padding: 140px 0 40px 0;
+    background: url('../imgs/main-background-min1024px.jpg') no-repeat top;
+    background-size: cover;
+  }
+
+  .welcome-section-container {
+    max-width: 800px;
+    padding: 20px 50px;
+    margin: 0 auto;
+    background: rgba(0, 0, 0, .5);
+    border-radius: 10px;
+  }
+  .footer__signature, .footer__links, .footer__copyright {
+    display: inline-block;
+  }
+  .footer__signature{
+    float:left;
+  }
+  .footer__copyright{
+    float:right;
+  }
 }
