@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" ng-app="lodSite">
 <head>
   <link rel="stylesheet" href="./styles/style.css">
   <title>Лига Разработчиков НИТУ МИСиС</title>
@@ -34,34 +34,7 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<header>
-  <div class="header__site-logo"></div>
-  <span class="header__reg-or-login">
-    <a class="reg-or-login__reg" href="">Стать разработчиком</a>
-    или <a class="reg-or-login__login" href="">Войти</a>
-  </span>
-  <div class="header__nav-toggle">
-    <div class="nav-toggle__burger"></div>
-  </div>
-  <nav class="header__nav-full">
-    <a class="nav-full__item" href="">Заказать</a>
-    <a class="nav-full__item" href="">Проекты</a>
-    <a class="nav-full__item" href="">Разработчики</a>
-    <a class="nav-full__item" href="">Блог</a>
-    <a class="nav-full__item" href="">О нас</a>
-    <a class="nav-full__item" href="">Связаться</a>
-  </nav>
-</header>
-<nav class="nav-mobile">
-  <a class="nav-mobile__item" href="">Войти</a>
-  <a class="nav-mobile__item" href="">Стать разработчиком</a>
-  <a class="nav-mobile__item" href="">Сделать заказ</a>
-  <a class="nav-mobile__item" href="">Наши проекты</a>
-  <a class="nav-mobile__item" href="">Разработчики</a>
-  <a class="nav-mobile__item" href="">Блог</a>
-  <a class="nav-mobile__item" href="">О нас</a>
-  <a class="nav-mobile__item" href="">Связаться</a>
-</nav>
+<page-header></page-header>
 <div class="content">
   <section class="welcome-section">
     <div class="welcome-section-container">
@@ -76,33 +49,33 @@
   </section>
   <section class="projects-section">
     <h1 class="projects-section__headline headline">Наши проекты</h1>
-    <a class="developers-section__link-to-project" href="#">
+    <a class="projects-section__link-to-project" href="#">
       <div class="projects-section__project">
         <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию.</span>
         <span class="project__name project__name--style">Imaginarium</span>
       </div>
     </a>
-    <a class="developers-section__link-to-project" href="#">
+    <a class="projects-section__link-to-project" href="#">
       <div class="projects-section__project">
         <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию</span>
         <span class="project__name project__name--style">Imaginarium</span>
       </div>
     </a>
-    <a class="developers-section__link-to-project" href="#">
+    <a class="projects-section__link-to-project" href="#">
       <div class="projects-section__project">
         <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию</span>
         <span class="project__name project__name--style">Movie-Extended</span>
       </div>
     </a>
-    <a class="developers-section__link-to-project" href="#">
+    <a class="projects-section__link-to-project" href="#">
       <div class="projects-section__project">
         <span class="project__tooltip">Нажмите, чтобы увидеть подробную информацию</span>
         <span class="project__name project__name--style">Movie-Extended</span>
       </div>
     </a>
     <a class="projects-section__see-all-button button-style" href="#">Смотреть все</a>
+    <div class="dividing-line"></div>
   </section>
-  <div class="dividing-line"></div>
   <section class="developers-section">
     <h1 class="developers-section__headline headline">Наши разработчики</h1>
     <a class="developers-section__link-to-profile" href="#">
@@ -150,18 +123,12 @@
     <a class="developers-section__see-all-button button-style" href="#">Смотреть всех</a>
   </section>
 </div>
-<footer>
-  <span class="footer__signature">
-    Сайт сделан <a href="#" class="signature__link">"Лигой разработчиков"</a>
-  </span>
-
-  <div class="footer__links">
-    <span><a class="links__vk" href="http://vk.com/lodmisis">Мы Вконтакте </a>|</span>
-    <a href="#" class="links__contact-us">Связаться</a>
-  </div>
-  <span class="footer__copyright">League of developers 2014-<span class="copyright__this-year"> </span>©</span>
-</footer>
-<script src="./js/script.js"></script>
-<script src="./js/menu-switcher.js"></script>
+<page-footer></page-footer>
+<!--<script src="./js/script.js"></script>-->
+<!--<script src="./js/menu-switcher.js"></script>-->
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="./app/app.js"></script>
+<script src="./app/controllers.js"></script>
+<script src="./app/directives.js"></script>
 </body>
 </html>
