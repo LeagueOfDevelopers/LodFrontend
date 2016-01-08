@@ -231,7 +231,6 @@ header {
 }
 
 .welcome-section__headline {
-  font-size: 2em;
   margin: 30px 0 10px 0;
   color: #ffd200;
 }
@@ -312,7 +311,6 @@ header {
   -ms-user-select: none;
   user-select: none;
   cursor: pointer;
-  background: url('../imgs/project-landscape.png') no-repeat center;
   background-size: cover;
   box-shadow: 0 0 0 #bebebe;
   -webkit-transition: all .2s ease;
@@ -369,11 +367,11 @@ header {
 }
 
 .developer__photo {
+  display:inline-block;
   box-sizing: border-box;
-  width: 240px;
-  height: 240px;
+  width: 200px;
+  height: 200px;
 
-  background: url('../imgs/developer-photo.jpg') no-repeat center;
   background-size: contain;
   border-radius: 50%;
   border: 5px solid #202d3a;
@@ -386,14 +384,14 @@ header {
 .developer__full-name {
   display: block;
   margin: 10px 0 5px 0;
-  font-size: 1.2em;
+  font-size: 1.1em;
   font-weight: bold;
 }
 
 .developer__specialization {
   display: block;
   margin-bottom: 10px;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
 
 .developers-section__see-all-button {
@@ -406,7 +404,7 @@ footer {
   box-sizing: border-box;
   position: relative;
   width: 100%;
-  padding: 15px;
+  padding: 15px 30px;
   background: #151515;
   text-align: center;
 }
@@ -447,6 +445,7 @@ footer {
   }
 
   .welcome-section__headline {
+    font-size: 2em;
     text-align: left;
     margin: 40px 0 20px 0;
   }
@@ -459,7 +458,7 @@ footer {
 
   .developers-section__developer {
     display: inline-block;
-    margin: 10px 20px 25px 20px;
+    margin: 10px 5px 25px 5px;
     width: 240px;
   }
 }
@@ -508,6 +507,10 @@ footer {
   header {
     height: 100px;
     background-color: rgba(21, 21, 21, 0);
+  }
+
+  .header--black header {
+    background-color: rgba(21, 21, 21, 1);
   }
 
   .header__site-logo {
@@ -667,7 +670,7 @@ footer {
   .links__vk:hover,
   .links__contact-us:hover {
     text-decoration: underline;
-    color: #2980b9;
+    color: #ffd200;
   }
 
 }
