@@ -55,21 +55,20 @@
     <div class="projects-section-container">
       <page-projects></page-projects>
     </div>
-    <a class="projects-section__see-all-button button-style" href="#">Смотреть все</a>
+    <a class="projects-section__see-all-button button-style" href="projects.html">Смотреть все</a>
     <div class="dividing-line"></div>
   </section>
-  <section ng-controller="DeveloperListCtrl" class="developers-section">
+  <section ng-controller="DevelopersListController" class="developers-section">
     <h1 class="developers-section__headline headline">Наши разработчики</h1>
     <a ng-repeat="developer in developers" class="developers-section__link-to-profile"
        ng-href="developers/id{{developer.UserId}}.html">
       <div class="developers-section__developer">
-        <img alt="{{developer.FirstName}} {{developer.LastName}}" class="developer__photo"
-             ng-src="{{developer.PhotoUri}}">
-        <span class="developer__full-name">{{developer.FirstName}} {{developer.LastName}}</span>
-        <span class="developer__specialization">{{developer.Role}}</span>
+        <img class="developer__photo" ng-src="{{developer.PhotoUri}}">
+        <span class="developer__full-name" ng-bind="developer.FirstName + ' ' + developer.LastName"></span>
+        <span class="developer__specialization" ng-bind="developer.Role"></span>
       </div>
     </a>
-    <a class="developers-section__see-all-button button-style" href="#">Смотреть всех</a>
+    <a class="developers-section__see-all-button button-style" href="developers.html">Смотреть всех</a>
   </section>
 </div>
 <page-footer></page-footer>

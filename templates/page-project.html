@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="ru" ng-app="lodSite">
 <head>
   <link rel="stylesheet" href="styles/style.css">
-  <title>Проекты — Лига Разработчиков НИТУ МИСиС</title>
+  <title>{{project.name}} — Проекты — Лига разработчиков МИСиС</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="keywords" content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС,
    NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС,
    разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт,
    заказать android приложение, заказать iOS приложение, заказать desktop приложение">
-  <meta name="description" content="Текущие и выполненные проекты Лиги Разработчиков.">
+  <meta name="description" content="Мы — студенты МИСиС, выбравшие IT в качестве сферы
+   профессионального развития. Цель организации - обучение и работа над программными
+   проектами в сферах: веб, мобильные платформы, десктоп, серверные приложения.">
   <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png">
@@ -31,30 +31,3 @@
   <meta name="msapplication-config" content="imgs/favicons/browserconfig.xml">
   <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-<page-header isblack="true"></page-header>
-<div class="content">
-  <section class="projects-section">
-    <h1 class="projects-section__headline headline">Проекты</h1>
-    <div class="dividing-line"></div>
-    <div class="categories">
-      <span class="categories__item categories__web categories__item--activated">Веб</span>
-      <span class="categories__item categories__game">Игра</span>
-      <span class="categories__item categories__mobile categories__item--activated">Мобильное</span>
-      <span class="categories__item categories__desktop">Десктопное</span>
-      <span class="categories__item categories__other">Прочее</span>
-    </div>
-    <div class="dividing-line"></div>
-    <div class="projects-section-container">
-      <page-projects></page-projects>
-    </div>
-    <a class="projects-section__see-more-button button-style" href="#">Показать больше</a>
-  </section>
-</div>
-<page-footer></page-footer>
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
-<script src="app/app.js"></script>
-<script src="app/controllers.js"></script>
-<script src="app/directives.js"></script>
-</body>
-</html>

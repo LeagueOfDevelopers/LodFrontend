@@ -187,7 +187,7 @@ header {
 
 /* mobile navigation */
 .nav-mobile {
-  display: none;
+  display: block;
   width: 100%;
   background: #ffffff;
   font-family: 'Cuprum', sans-serif;
@@ -196,10 +196,6 @@ header {
   -moz-transition: all .2s;
   -o-transition: all .2s;
   transition: all .2s;
-}
-
-.nav-mobile--visible {
-  display: block;
 }
 
 .nav-mobile__item {
@@ -369,8 +365,8 @@ header {
 .developer__photo {
   display:inline-block;
   box-sizing: border-box;
-  width: 200px;
-  height: 200px;
+  width: 240px;
+  height: 240px;
 
   background-size: contain;
   border-radius: 50%;
@@ -458,7 +454,7 @@ footer {
 
   .developers-section__developer {
     display: inline-block;
-    margin: 10px 5px 25px 5px;
+    margin: 10px 20px 25px 20px;
     width: 240px;
   }
 }
