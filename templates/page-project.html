@@ -1,33 +1,27 @@
-<head>
-  <link rel="stylesheet" href="styles/style.css">
-  <title>{{project.name}} — Проекты — Лига разработчиков МИСиС</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <meta name="keywords" content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС,
-   NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС,
-   разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт,
-   заказать android приложение, заказать iOS приложение, заказать desktop приложение">
-  <meta name="description" content="Мы — студенты МИСиС, выбравшие IT в качестве сферы
-   профессионального развития. Цель организации - обучение и работа над программными
-   проектами в сферах: веб, мобильные платформы, десктоп, серверные приложения.">
-  <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="imgs/favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="imgs/favicons/manifest.json">
-  <link rel="mask-icon" href="imgs/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="imgs/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="msapplication-TileImage" content="imgs/favicons/mstile-144x144.png">
-  <meta name="msapplication-config" content="imgs/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
-</head>
+<div class="full-project-container">
+  <h1 class="full-project__name" ng-bind="project.Name"></h1>
+  <div class="dividing-line"></div>
+  <div class="full-project__preview" style="background: url({{project.LandingImageUri}}) no-repeat center;">
+    <span class="preview__project-status" ng-bind="projectStatus"></span>
+  </div>
+  <div class="full-project__info">
+    <div class="info__subheading">Тип проекта:</div>
+    <div  class="info__project-types">
+      <span ng-repeat="projectType in projectTypes" ng-bind="projectType" class="project-type"></span>
+    </div>
+    <div class="info__subheading">Описание:</div>
+    <div class="info__description" ng-bind="project.Info"></div>
+    <div class="info__subheading">Разработчики:</div>
+    <div class="info__developers"></div>
+    <div class="info__links">Проект в <a href="{{project.ProjectManagementSystemUri}}">Redmine</a>
+      и <a href="{{project.VersionControlSystemUri}}">Gitlab</a>.</div>
+    <div class="info__join-button">Присоединиться</div>
+  </div>
+  <h1 class="full-project__headline headline">Задачи на проекте</h1>
+  <div class="dividing-line"></div>
+  <div class="full-project__issues">
+    <span ng-repeat="projectIssue in projectIssues" class="full-project__issues" ng-bind="projectIssue.Header"></span>
+  </div>
+  <h1 class="full-project__headline headline">Cкриншоты</h1>
+  <!--Галерея-->
+</div>

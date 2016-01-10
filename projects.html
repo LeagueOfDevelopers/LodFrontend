@@ -4,7 +4,7 @@
   <link rel="stylesheet" href="styles/style.css">
   <title>Проекты — Лига Разработчиков НИТУ МИСиС</title>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС,
    NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС,
    разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт,
@@ -37,16 +37,21 @@
   <section class="projects-section">
     <h1 class="projects-section__headline headline">Проекты</h1>
     <div class="dividing-line"></div>
-    <div class="categories">
-      <span class="categories__item categories__web categories__item--activated">Веб</span>
-      <span class="categories__item categories__game">Игра</span>
-      <span class="categories__item categories__mobile categories__item--activated">Мобильное</span>
-      <span class="categories__item categories__desktop">Десктопное</span>
-      <span class="categories__item categories__other">Прочее</span>
+    <div class="categories" ng-controller="ProjectsListController">
+      <span class="categories__item categories__web" ng-click="activateTag()"
+            ng-class="{'categories__item--activated':this.selected}">Веб</span>
+      <span class="categories__item categories__game" ng-click="activateTag()"
+            ng-class="{'categories__item--activated':selected}">Игра</span>
+      <span class="categories__item categories__mobile" ng-click="activateTag()"
+            ng-class="{'categories__item--activated':selected}">Мобильное</span>
+      <span class="categories__item categories__desktop" ng-click="activateTag()"
+            ng-class="{'categories__item--activated':selected}">Десктопное</span>
+      <span class="categories__item categories__other" ng-click="activateTag()"
+            ng-class="{'categories__item--activated':selected}">Прочее</span>
     </div>
     <div class="dividing-line"></div>
     <div class="projects-section-container">
-      <page-projects></page-projects>
+      <page-projects isfull="true"></page-projects>
     </div>
     <a class="projects-section__see-more-button button-style" href="#">Показать больше</a>
   </section>

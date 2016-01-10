@@ -29,6 +29,14 @@ lodSite.directive('pageProjects',function(){
     restrict : 'E',
     scope: true,
     templateUrl: 'templates/page-projects.html',
+    link: function($scope, el, attrs) {
+      var isFull = attrs.isfull || false;
+      if (isFull === 'true') {
+        $scope.apiForProjects = 'All';
+      }else{
+        $scope.apiForProjects = 'notAll';
+      }
+    },
     controller: 'ProjectsListController'
   }
 });
@@ -38,6 +46,5 @@ lodSite.directive('pageProject',function(){
     restrict : 'E',
     scope: true,
     templateUrl: 'templates/page-project.html'
-    //controller: 'ProjectController'
   }
 });
