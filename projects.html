@@ -37,21 +37,16 @@
   <section class="projects-section">
     <h1 class="projects-section__headline headline">Проекты</h1>
     <div class="dividing-line"></div>
-    <div class="categories" ng-controller="ProjectsListController">
-      <span class="categories__item categories__web" ng-click="activateTag()"
-            ng-class="{'categories__item--activated':this.selected}">Веб</span>
-      <span class="categories__item categories__game" ng-click="activateTag()"
-            ng-class="{'categories__item--activated':selected}">Игра</span>
-      <span class="categories__item categories__mobile" ng-click="activateTag()"
-            ng-class="{'categories__item--activated':selected}">Мобильное</span>
-      <span class="categories__item categories__desktop" ng-click="activateTag()"
-            ng-class="{'categories__item--activated':selected}">Десктопное</span>
-      <span class="categories__item categories__other" ng-click="activateTag()"
-            ng-class="{'categories__item--activated':selected}">Прочее</span>
+    <div class="categories">
+      <span class="categories__item categories__web">Веб</span>
+      <span class="categories__item categories__game">Игра</span>
+      <span class="categories__item categories__mobile">Мобильное</span>
+      <span class="categories__item categories__desktop">Десктопное</span>
+      <span class="categories__item categories__other">Прочее</span>
     </div>
     <div class="dividing-line"></div>
     <div class="projects-section-container">
-      <page-projects isfull="true"></page-projects>
+      <full-projects></full-projects>
     </div>
     <a class="projects-section__see-more-button button-style" href="#">Показать больше</a>
   </section>

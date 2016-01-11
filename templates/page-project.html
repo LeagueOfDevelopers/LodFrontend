@@ -7,7 +7,7 @@
   <div class="full-project__info">
     <div class="info__subheading">Тип проекта:</div>
     <div  class="info__project-types">
-      <span ng-repeat="projectType in projectTypes" ng-bind="projectType" class="project-type"></span>
+      <span ng-repeat="projectType in project.ProjectType" ng-bind="projectType" class="project-type"></span>
     </div>
     <div class="info__subheading">Описание:</div>
     <div class="info__description" ng-bind="project.Info"></div>

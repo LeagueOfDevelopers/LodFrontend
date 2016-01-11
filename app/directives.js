@@ -24,20 +24,21 @@ lodSite.directive('pageFooter',function(){
   }
 });
 
-lodSite.directive('pageProjects',function(){
+lodSite.directive('randomProjects',function(){
   return{
     restrict : 'E',
     scope: true,
-    templateUrl: 'templates/page-projects.html',
-    link: function($scope, el, attrs) {
-      var isFull = attrs.isfull || false;
-      if (isFull === 'true') {
-        $scope.apiForProjects = 'All';
-      }else{
-        $scope.apiForProjects = 'notAll';
-      }
-    },
-    controller: 'ProjectsListController'
+    templateUrl: 'templates/random-projects.html',
+    controller: 'RandomProjectsController'
+  }
+});
+
+lodSite.directive('fullProjects',function(){
+  return{
+    restrict : 'E',
+    scope: true,
+    templateUrl: 'templates/full-projects.html',
+    controller: 'FullProjectsController'
   }
 });
 
