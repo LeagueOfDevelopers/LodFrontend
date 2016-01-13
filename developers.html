@@ -2,11 +2,11 @@
 <html lang="ru" ng-app="lodSite">
 <head>
   <link rel="stylesheet" href="styles/style.css">
-  <title>Лига Разработчиков НИТУ МИСиС</title>
+  <title>Разработчики — Лига Разработчиков НИТУ МИСиС</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="keywords" content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС, NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС, разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт, заказать android приложение, заказать iOS приложение, заказать desktop приложение">
-  <meta name="description" content="Мы — студенты МИСиС, выбравшие IT в качестве сферы профессионального развития. Цель организации - обучение и работа над программными проектами в сферах: веб, мобильные платформы, десктоп, серверные приложения.">
+  <meta name="description" content="Все разработчики Лиги Разработчиков НИТУ МИСиС.">
   <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png">
   <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png">
   <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png">
@@ -29,35 +29,12 @@
   <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<page-header></page-header>
+<page-header isblack="true"></page-header>
 <div class="content">
-  <section class="welcome-section">
-    <div class="welcome-section-container">
-      <h1 class="welcome-section__headline headline">Кто мы?</h1>
-
-      <p class="welcome-section__paragraph">Мы IT-организация, находящаяся
-        в стенах национального государственного университета “МИСиС”.</p>
-
-      <h1 class="welcome-section__headline headline">Что мы делаем?</h1>
-
-      <p class="welcome-section__paragraph">Программируем на заказ, создаём web-сайты,
-        Android, iOS и desktop приложения.</p>
-      <a class="welcome-section__order-button button-style button-style--light" href="order.html">Сделать заказ</a>
-    </div>
-  </section>
-  <section class="projects-section">
-    <h1 class="projects-section__headline headline">Наши проекты</h1>
-    <div class="projects-section-container">
-      <random-projects></random-projects>
-    </div>
-    <a class="projects-section__see-all-button button-style" href="projects.html">Смотреть все</a>
-    <div class="dividing-line"></div>
-  </section>
-  <section class="developers-section">
-    <h1 class="developers-section__headline headline">Наши разработчики</h1>
-    <random-developers></random-developers>
-    <a class="developers-section__see-all-button button-style" href="developers.html">Смотреть всех</a>
-  </section>
+  <h1 class="projects-section__headline headline">Разработчики</h1>
+  <div class="dividing-line"></div>
+  <full-developers></full-developers>
+  <a class="projects-section__see-more-button button-style" href="#">Показать больше</a>
 </div>
 <page-footer></page-footer>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>

@@ -24,6 +24,24 @@ lodSite.directive('pageFooter',function(){
   }
 });
 
+lodSite.directive('randomDevelopers',function(){
+  return{
+    restrict : 'E',
+    scope: true,
+    templateUrl: 'templates/random-developers.html',
+    controller: 'RandomDevelopersController'
+  }
+});
+
+lodSite.directive('fullDevelopers',function(){
+  return{
+    restrict : 'E',
+    scope: true,
+    templateUrl: 'templates/full-developers.html',
+    controller: 'FullDevelopersController'
+  }
+});
+
 lodSite.directive('randomProjects',function(){
   return{
     restrict : 'E',

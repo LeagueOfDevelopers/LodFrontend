@@ -7,9 +7,15 @@ lodSite.controller('HeaderController', ['$scope',function($scope) {
   }
 }]);
 
-lodSite.controller('DevelopersListController', ['$scope', '$http', function($scope, $http) {
+lodSite.controller('RandomDevelopersController', ['$scope', '$http', function($scope, $http) {
   $http.get('http://api.lod-misis.ru/developers/random/6').success(function(data) {
-    $scope.developers = data;
+    $scope.randomDevelopers = data;
+  });
+}]);
+
+lodSite.controller('FullDevelopersController', ['$scope', '$http', function($scope, $http) {
+  $http.get('http://api.lod-misis.ru/developers').success(function(data) {
+    $scope.fullDevelopers = data;
   });
 }]);
 
