@@ -13,13 +13,21 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/* main */
-body, html {
+/************************
+         MAIN
+*************************/
+body {
   font-size: 1em;
   font-family: 'PT Sans', sans-serif;
   background-color: #f1f1f1;
   color: #202d3a;
-  min-height: 100%;
+}
+
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
 }
 
 ol, ul {
@@ -91,12 +99,13 @@ a {
   transition: all .2s;
 }
 
-
 .button-style--light {
   border: 2px solid #fff;
 }
 
-/* header */
+/************************
+         HEADER
+*************************/
 header {
   box-sizing: border-box;
   position: relative;
@@ -171,6 +180,7 @@ header {
 .nav-toggle__burger:after {
   top: 200%;
 }
+
 /** end of burger-icon **/
 
 .header__nav-full {
@@ -205,7 +215,9 @@ header {
   background: #f1f1f1;
 }
 
-/* welcome - section */
+/************************
+     WELCOME-SECTION
+*************************/
 .welcome-section {
   width: 100%;
 
@@ -243,7 +255,7 @@ header {
 }
 
 /* categories section */
-.categories{
+.categories {
   text-align: center;
   width: 100%;
   -webkit-user-select: none;
@@ -252,7 +264,7 @@ header {
   user-select: none;
 }
 
-.categories__item{
+.categories__item {
   display: inline-block;
   padding: 10px;
   margin: 5px;
@@ -263,19 +275,20 @@ header {
   -moz-transition: background-color .2s ease-out;
   -o-transition: background-color .2s ease-out;
   transition: background-color .2s ease-out;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.categories__item--activated{
+.categories__item--activated {
   background-color: #2980b9;
 }
 
-.categories__item:hover{
+.categories__item:hover {
   border: 1px dashed white;
 }
 
-
-/* projects - section */
+/************************
+    PROJECTS-SECTION
+*************************/
 .projects-section {
   box-sizing: border-box;
   width: 100%;
@@ -303,10 +316,11 @@ header {
   -o-transition: all .2s ease-in;
   transition: all .2s ease-in;
 }
-.project__background{
+
+.project__background {
   position: absolute;
-  top:0;
-  left:0;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
   background-size: contain;
@@ -315,12 +329,14 @@ header {
   -o-transition: all .15s ease;
   transition: all .15s ease;
 }
-.project__info-container{
+
+.project__info-container {
   position: absolute;
   width: 100%;
   bottom: 0;
   background-color: rgba(0, 0, 0, .7);
 }
+
 .project__name {
   box-sizing: border-box;
   position: relative;
@@ -336,6 +352,7 @@ header {
   text-transform: uppercase;
   color: #fff;
 }
+
 .project__status {
   box-sizing: border-box;
   width: 100%;
@@ -356,16 +373,20 @@ header {
   font-weight: normal;
   background: #0288d1;
 }
+
 .projects-section__see-all-button {
   display: block;
   margin: 40px auto;
 }
+
 .projects-section__see-more-button {
   display: block;
   margin: 40px auto;
 }
 
-/* developers - section */
+/************************
+   DEVELOPERS-SECTION
+*************************/
 .developers-section {
   box-sizing: border-box;
   width: 100%;
@@ -387,7 +408,7 @@ header {
 }
 
 .developer__photo {
-  display:inline-block;
+  display: inline-block;
   box-sizing: border-box;
   width: 240px;
   height: 240px;
@@ -419,12 +440,16 @@ header {
   margin: 15px auto 30px auto;
 }
 
-/* footer */
+/************************
+         FOOTER
+*************************/
 footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
   box-sizing: border-box;
-  position: relative;
   width: 100%;
-  padding: 15px 30px;
+  padding: 15px;
   background: #151515;
   text-align: center;
 }
@@ -447,14 +472,17 @@ footer {
   transition: all .2s;
 }
 
-/* media queries */
 @media only screen and (min-width: 640px) {
-  /* main */
+  /*************************
+           MAIN
+  *************************/
   body {
     font-size: 1.1em;
   }
 
-  /* welcome - section */
+  /*************************
+      WELCOME-SECTION
+  *************************/
   .welcome-section {
     background: url('../imgs/tablets-main-background.jpg') no-repeat center;
   }
@@ -470,7 +498,9 @@ footer {
     margin: 40px 0 20px 0;
   }
 
-  /* projects - section */
+  /*************************
+      PROJECTS-SECTION
+  *************************/
   .projects-section__project {
     height: 400px;
     margin: 9px;
@@ -482,8 +512,11 @@ footer {
     width: 240px;
   }
 }
+
 @media only screen and (min-width: 1024px) {
-  /* main */
+  /*************************
+           MAIN
+  *************************/
   .headline {
     text-align: left;
   }
@@ -523,7 +556,9 @@ footer {
     display: none;
   }
 
-  /* header */
+  /*************************
+            HEADER
+  *************************/
   header {
     height: 100px;
     background-color: rgba(21, 21, 21, 0);
@@ -546,7 +581,7 @@ footer {
   }
 
   .reg-or-login__reg,
-  .reg-or-login__login{
+  .reg-or-login__login {
     color: rgba(255, 255, 255, 0.71);
     margin: 0 5px;
     -webkit-transition: all .2s ease-out;
@@ -602,7 +637,9 @@ footer {
     margin-left: 15px;
   }
 
-  /* welcome - section */
+  /*************************
+       WELCOME-SECTION
+  *************************/
   .welcome-section {
     box-sizing: border-box;
     margin: -100px 0 0 0;
@@ -619,41 +656,50 @@ footer {
     border-radius: 10px;
   }
 
-  /* projects - section */
-
-  .project__name{
+  /*************************
+       PROJECTS-SECTION
+  *************************/
+  .project__name {
     font-size: 1.7em;
   }
-  .project__background{
+
+  .project__background {
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
   }
-  .project__background:hover{
+
+  .project__background:hover {
     -webkit-filter: none;
     filter: none;
   }
-  /* developers - section */
+
+  /*************************
+      DEVELOPERS-SECTION
+  *************************/
   .developers-section,
   .projects-section {
     padding: 0 40px;
   }
+
   .developer__photo:hover {
     border-color: #2980b9;
   }
 
-  /* footer */
+  /*************************
+          FOOTER
+  *************************/
   .footer__signature,
   .footer__links,
   .footer__copyright {
     display: inline-block;
   }
 
-  .footer__signature{
-    float:left;
+  .footer__signature {
+    float: left;
   }
 
-  .footer__copyright{
-    float:right;
+  .footer__copyright {
+    float: right;
   }
 
   .signature__link:hover,
