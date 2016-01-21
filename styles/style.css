@@ -493,6 +493,11 @@ header {
   text-decoration: underline;
 }
 
+.about-yandex-map{
+  width: 95%;
+  margin: 3% auto 7% auto;
+}
+
 /* footer */
 footer {
   box-sizing: border-box;
