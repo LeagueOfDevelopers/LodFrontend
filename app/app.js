@@ -6,5 +6,5 @@ var lodSite = angular.module('lodSite', []);
 function setPaddingBottom() {
   $('.content').css('padding-bottom', $('footer').innerHeight());
 }
-setTimeout(setPaddingBottom, 200);
+setTimeout(setPaddingBottom, 500);
 $(window).resize(setPaddingBottom);
