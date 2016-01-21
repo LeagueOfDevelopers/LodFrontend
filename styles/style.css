@@ -769,7 +769,7 @@ footer {
   }
 
   /*about*/ --> /*content*/
-  .about-main{
+  .about-wrap-content{
     width: 100%;
   }
   .about-content{
@@ -782,18 +782,13 @@ footer {
   }
 
   .about-content
-  .point-1, .point-2, .point-3,.point-4, .point-5, .point-6{
-    margin-top: 7%;
-  }
-
-  .about-content
   .number-2, .number-4, .number-6,
   .text-1, .text-3, .text-5{
-    float: right
+    float: right;
   }
+
   .about-numbers{
     display: inline-block;
-    vertical-align: middle;
     margin-bottom: 0;
     width: 200px;
     height: 200px;
@@ -803,14 +798,102 @@ footer {
 
   .about-text {
     display: inline-block;
-    vertical-align: top;
     padding: 20px ;
     max-width: 65%;
     min-height: 160px;
   }
 
-  .about-text .heading {
+  .about-text
+  .heading {
     font-size: 1.5em;
+  }
+
+  /*about*/ --> /*lines*/
+
+  .about-content
+  .lines{
+    position: absolute;
+    width: 100%;
+  }
+
+  .about-content
+  .lines
+  .block-1, .block-2{
+    width: 740px;
+    margin: 0 auto;
+  }
+
+  /* line-1-2  ===  line-5-6 */
+
+  .about-content
+  .line-1-2
+  .block-1{
+    height: 30px;
+    border-bottom: 10px solid white;
+    border-left: 10px solid white;
+  }
+
+  .about-content
+  .line-1-2
+  .block-2{
+    position: relative;
+    height: 30px;
+    border-right: 10px solid white;
+  }
+
+  /* line-2-3 */
+
+  .about-content
+  .line-2-3
+  .block-1{
+    height: 60px;
+    margin-top: -30px;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+  }
+
+  .about-content
+  .line-2-3
+  .block-2{
+    position: relative;
+    height: 30px;
+    border-left: 10px solid white;
+  }
+
+  /* line-3-4 */
+
+  .about-content
+  .line-3-4
+  .block-1{
+    height: 20px;
+    border-bottom: 10px solid white;
+    border-left: 10px solid white;
+  }
+
+  .about-content
+  .line-3-4
+  .block-2{
+    height: 30px;
+    border-right: 10px solid white;
+  }
+
+  /* line-4-5 */
+
+  .about-content
+  .line-4-5
+  .block-1{
+    height: 30px;
+    margin-top: -5px;
+    border-bottom: 10px solid white;
+    border-right: 10px solid white;
+  }
+
+  .about-content
+  .line-4-5
+  .block-2{
+    position: relative;
+    height: 30px;
+    border-left: 10px solid white;
   }
 
   /* footer */
