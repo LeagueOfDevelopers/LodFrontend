@@ -418,6 +418,80 @@ header {
   display: block;
   margin: 15px auto 30px auto;
 }
+/*about*/
+
+/*about*/ --> /*heading*/
+
+.about-logo-img {
+  display: block;
+  margin: 0 auto;
+  height: 192px;
+  width: 192px;
+}
+
+.about-logo-text{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 900;
+  color: black;
+}
+
+/*about*/ --> /*content*/
+
+.about-points{
+  margin: 0 3% 5% 3%;
+}
+
+.about-numbers{
+  position: relative;
+  margin: 0 auto -25px auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 5px solid white;
+  font-size: 25px;
+  font-weight: 900;
+  text-align: center;
+  z-index: 1;
+}
+
+.about-content .number-1, .number-3, .number-5 {
+  background-color: #ffd212;
+}
+.about-content .number-2, .number-4, .number-6 {
+  background-color: #0072bc;
+}
+
+.about-numbers span{
+  vertical-align: middle;
+  color: white;
+}
+
+.about-text {
+  padding: 7% 5% 5% 5%;
+  background-color: white;
+  text-align: justify;
+}
+
+
+.about-text .heading{
+  text-align: left;
+  margin-bottom: 10px;
+  font-family: 'Noto Serif', serif;
+  font-size: 1em;
+  font-weight: bold;
+  color: #202d3a;
+}
+.about-text a{
+  font-weight: 900;
+  color: darkslategrey;
+}
+
+.about-text a:hover{
+  color: #202d3a;
+  text-decoration: underline;
+}
 
 /* footer */
 footer {
@@ -481,11 +555,30 @@ footer {
     margin: 10px 20px 25px 20px;
     width: 240px;
   }
+
+/*about*/
+
+  .about-numbers{
+    margin-bottom: -47.5px;
+    width: 80px;
+    height: 80px;
+    border-width: 8px;
+    font-size: 50px;
+  }
+
+  .about-text {
+    padding-top: 8%;
+  }
+
+  .about-text .heading {
+    font-size: 1.2em;
+  }
 }
 @media only screen and (min-width: 1024px) {
   /* main */
   .headline {
     text-align: left;
+    margin-left: 7%;
   }
 
   .dividing-line {
@@ -639,6 +732,80 @@ footer {
   }
   .developer__photo:hover {
     border-color: #2980b9;
+  }
+
+  /*about*/
+
+  /*about*/ --> /*heading*/
+
+  .about-heading{
+    width: 100%;
+  }
+
+  .about-logo{
+    margin: 0 auto;
+    width: 890px;
+  }
+
+  .about-logo-img {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    width: 250px;
+    height: 250px;
+  }
+
+  .about-logo-text{
+    display: inline-block;
+    vertical-align: middle;
+    text-align: left;
+    width: 630px;
+    font-size: 80px;
+  }
+
+  /*about*/ --> /*content*/
+  .about-main{
+    width: 100%;
+  }
+  .about-content{
+    width: 1000px;
+    margin: 0 auto;
+  }
+
+  .about-points{
+    margin: 0 2%;
+  }
+
+  .about-content
+  .point-1, .point-2, .point-3,.point-4, .point-5, .point-6{
+    margin-top: 7%;
+  }
+
+  .about-content
+  .number-2, .number-4, .number-6,
+  .text-1, .text-3, .text-5{
+    float: right
+  }
+  .about-numbers{
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    width: 200px;
+    height: 200px;
+    border: 10px solid white;
+    font-size: 130px;
+  }
+
+  .about-text {
+    display: inline-block;
+    vertical-align: top;
+    padding: 20px ;
+    max-width: 65%;
+    min-height: 160px;
+  }
+
+  .about-text .heading {
+    font-size: 1.5em;
   }
 
   /* footer */
