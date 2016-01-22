@@ -494,7 +494,7 @@ header {
 }
 
 .about-text {
-    padding: 19% 5% 5% 5%;
+    padding: 60px 5% 5% 5%;
     background-color: white;
     text-align: left;
 }
@@ -612,7 +612,7 @@ footer {
     }
 
     .about-text {
-        padding-top: 15%;
+        padding-top: 85px;
     }
 }
 
@@ -839,6 +839,10 @@ footer {
         padding: 20px;
         max-width: 65%;
         min-height: 160px;
+    }
+
+    .about-text .heading {
+        text-align: left;
     }
 
     /*about*/
