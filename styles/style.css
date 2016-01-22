@@ -13,9 +13,9 @@ time, mark, audio, video {
   vertical-align: baseline;
 }
 
-/************************
-         MAIN
-*************************/
+  /************************
+            MAIN
+  *************************/
 body {
   font-size: 1em;
   font-family: 'PT Sans', sans-serif;
@@ -53,9 +53,9 @@ a {
 
 .dividing-line {
   height: 1px;
-  width: 90%;
+  width: 100%;
   background-color: #202d3a;
-  margin: 10px auto;
+  margin: 10px 0;
 }
 
 .button-style {
@@ -103,9 +103,9 @@ a {
   border: 2px solid #fff;
 }
 
-/************************
-         HEADER
-*************************/
+  /************************
+           HEADER
+  *************************/
 header {
   box-sizing: border-box;
   position: relative;
@@ -215,9 +215,9 @@ header {
   background: #f1f1f1;
 }
 
-/************************
-     WELCOME-SECTION
-*************************/
+  /************************
+       WELCOME-SECTION
+  *************************/
 .welcome-section {
   width: 100%;
 
@@ -254,6 +254,16 @@ header {
   text-align: center;
 }
 
+  /************************
+      PROJECTS-SECTION
+  *************************/
+.projects-section {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+  text-align: center;
+}
+
 /* categories section */
 .categories {
   text-align: center;
@@ -284,16 +294,6 @@ header {
 
 .categories__item:hover {
   border: 1px dashed white;
-}
-
-/************************
-    PROJECTS-SECTION
-*************************/
-.projects-section {
-  box-sizing: border-box;
-  width: 100%;
-  padding: 15px;
-  text-align: center;
 }
 
 .projects-section__project {
@@ -384,9 +384,9 @@ header {
   margin: 40px auto;
 }
 
-/************************
-   DEVELOPERS-SECTION
-*************************/
+  /************************
+      DEVELOPERS-SECTION
+  *************************/
 .developers-section {
   box-sizing: border-box;
   width: 100%;
@@ -440,9 +440,9 @@ header {
   margin: 15px auto 30px auto;
 }
 
-/************************
-         FOOTER
-*************************/
+  /************************
+           FOOTER
+  *************************/
 footer {
   position: absolute;
   bottom: 0;
@@ -472,6 +472,97 @@ footer {
   transition: all .2s;
 }
 
+  /************************
+        PROJECT-PAGE
+  *************************/
+.full-project-container{
+  box-sizing: border-box;
+  width: 100%;
+  padding: 15px;
+}
+
+.full-project-wrapper{
+  width: 100%;
+  margin: 0 auto;
+}
+.full-project__name{
+  display: block;
+  margin: 15px auto;
+  font-size: 1.8em;
+  font-weight: bold;
+  font-family: 'Cuprum', sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 2px 2px rgba(0,0,0,.1);
+}
+
+.full-project__preview{
+  position: relative;
+  width: 100%;
+  height: 300px;
+  border-radius: 5px 5px 0 0;
+}
+
+.preview__project-status{
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+}
+
+.full-project__info{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px;
+  background: #fff;
+  border-radius: 0 0 5px 5px;
+}
+
+.info__subheading{
+  text-align: left;
+  font-weight: 900;
+  font-size: 1.1em;
+}
+
+.info__subheading:not(:first-of-type),
+.info__links{
+  margin-top: 10px;
+}
+
+.info__project-types{
+  display: inline-block;
+  color: white;
+  background: #717171;
+  padding: 5px 10px;
+  margin: 10px 5px 0 0;
+}
+
+.info__links>a {
+  display: inline-block;
+  color: #1e88e5;
+  padding: 3px 5px;
+  border-radius: 5px;
+  border: solid 2px #1e88e5;
+  -webkit-transition: all .15s ease-out;
+  -moz-transition: all .15s ease-out;
+  -o-transition: all .15s ease-out;
+  transition: all .15s ease-out;
+}
+
+.info__join-button{
+  text-align: center;
+  display: block;
+  margin: 25px auto 10px auto;
+}
+.full-project-issues{
+  text-align: center;
+}
+.project-issues__issue {
+  display: inline-block;
+  padding: 10px;
+  background: #fff;
+  box-shadow: 1px 1px 2px rgba(0, 0, 0, .15);
+  margin: 5px;
+}
 @media only screen and (min-width: 640px) {
   /*************************
            MAIN
@@ -511,6 +602,13 @@ footer {
     margin: 10px 20px 25px 20px;
     width: 240px;
   }
+
+/************************
+      PROJECT-PAGE
+*************************/
+  .full-project-wrapper{
+    max-width: 800px;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -522,7 +620,6 @@ footer {
   }
 
   .dividing-line {
-    width: 100%;
     margin: 15px auto;
   }
 
@@ -707,6 +804,21 @@ footer {
   .links__contact-us:hover {
     text-decoration: underline;
     color: #ffd200;
+  }
+
+  /************************
+        PROJECT-PAGE
+  *************************/
+  .info__links>a:hover{
+    color: #fff;
+    background-color: #1e88e5;
+  }
+
+  .full-project-issues{
+    text-align: left;
+  }
+  .project-issues__issue {
+    margin: 15px 15px 15px 0;
   }
 
 }

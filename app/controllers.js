@@ -36,7 +36,7 @@ lodSite.controller('FooterController', ['$scope', function($scope) {
 }]);
 
 lodSite.controller('ProjectController', ['$scope', '$http', function ($scope, $http) {
-  $http.get('http://api.lod-misis.ru/projects/2').success(function (data) {
+  $http.get('http://api.lod-misis.ru/projects/1').success(function (data) {
     $scope.project = data;
     $scope.projectTypes = $scope.project.ProjectType;
     $scope.projectIssues = $scope.project.Issues;
