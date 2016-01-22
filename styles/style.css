@@ -520,7 +520,7 @@ header {
 
 .about-yandex-map {
     width: 95%;
-    margin-top: 8%;
+    margin: 8% auto 0;
 }
 
 /************************
@@ -598,9 +598,9 @@ footer {
     /*about*/
     .about-logo {
         max-width: 90%;
-        background: url("../imgs/logo-ver2.png") no-repeat center;
+        background: url("../imgs/logo-ver2-black.png") no-repeat center;
         background-size: contain;
-        margin:auto;
+        margin: auto;
     }
 
     .about-numbers {
@@ -805,6 +805,7 @@ footer {
 
         margin: 3% auto 5%;
     }
+
     /*about*/
 --> /*content*/
     .about-wrap-content {
