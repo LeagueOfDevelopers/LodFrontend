@@ -460,7 +460,7 @@ header {
 /*content*/
 
 .about-wrap-content {
-    margin: 5% auto 230px auto;
+    margin: 5% auto 230px;
 }
 
 .about-points {
@@ -469,11 +469,11 @@ header {
 
 .about-numbers {
     position: relative;
-    margin: 0 auto -50px auto;
+    margin: 0 auto -50px;
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    border: 5px solid white;
+    border: 8px solid white;
     font-size: 55px;
     font-weight: 900;
     text-align: center;
@@ -607,7 +607,7 @@ footer {
         margin-bottom: -80px;
         width: 150px;
         height: 150px;
-        border-width: 8px;
+        border-width: 10px;
         font-size: 93px;
     }
 
@@ -830,8 +830,7 @@ footer {
         margin-bottom: 0;
         width: 200px;
         height: 200px;
-        border: 10px solid white;
-        font-size: 130px;
+        font-size: 127px;
     }
 
     .about-text {
