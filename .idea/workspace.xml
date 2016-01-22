@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="46d65e4a-93b0-49ff-8175-da2fd7c8224c" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers.js" afterPath="$PROJECT_DIR$/app/controllers.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/style.css" afterPath="$PROJECT_DIR$/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/templates/page-project.html" afterPath="$PROJECT_DIR$/templates/page-project.html" />
     </list>
     <ignored path="LodFrontend.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -51,8 +48,8 @@
       <file leaf-file-name="style.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.36900368">
-              <caret line="564" column="1" selection-start-line="564" selection-start-column="1" selection-end-line="564" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.4280443">
+              <caret line="562" column="23" selection-start-line="562" selection-start-column="23" selection-end-line="562" selection-end-column="23" />
               <folding>
                 <element signature="e#10503#11423#0" expanded="false" />
               </folding>
@@ -766,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.36900368">
-          <caret line="564" column="1" selection-start-line="564" selection-start-column="1" selection-end-line="564" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.4280443">
+          <caret line="562" column="23" selection-start-line="562" selection-start-column="23" selection-end-line="562" selection-end-column="23" />
           <folding>
             <element signature="e#10503#11423#0" expanded="false" />
           </folding>
