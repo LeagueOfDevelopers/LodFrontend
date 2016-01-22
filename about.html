@@ -1,152 +1,159 @@
 <!DOCTYPE html>
 <html lang="ru" ng-app="lodSite">
 <head>
-  <link rel="stylesheet" href="styles/style.css">
-  <title>О нас — Лига Разработчиков НИТУ МИСиС</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="keywords" content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС, NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС, разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт, заказать android приложение, заказать iOS приложение, заказать desktop приложение">
-  <meta name="description" content="Вся информация о Лиге Разработчиков НИТУ МИСиС.">
-  <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicons/apple-touch-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicons/apple-touch-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicons/apple-touch-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicons/apple-touch-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicons/apple-touch-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-touch-icon-180x180.png">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-32x32.png" sizes="32x32">
-  <link rel="icon" type="image/png" href="imgs/favicons/android-chrome-192x192.png" sizes="192x192">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-96x96.png" sizes="96x96">
-  <link rel="icon" type="image/png" href="imgs/favicons/favicon-16x16.png" sizes="16x16">
-  <link rel="manifest" href="imgs/favicons/manifest.json">
-  <link rel="mask-icon" href="imgs/favicons/safari-pinned-tab.svg" color="#5bbad5">
-  <link rel="shortcut icon" href="imgs/favicons/favicon.ico">
-  <meta name="msapplication-TileColor" content="#ffc40d">
-  <meta name="msapplication-TileImage" content="imgs/favicons/mstile-144x144.png">
-  <meta name="msapplication-config" content="imgs/favicons/browserconfig.xml">
-  <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>О нас — Лига Разработчиков НИТУ МИСиС</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords"
+          content="Лига Разработчиков, League of Developers, LoD, НИТУ МИСиС, NUST MISIS, программирование в МИСиС, студенческие организации МИСиС, IT, ИТАСУ, программисты МИСиС, разработчики МИСиС, заказать работу, обучение разработке, стать разработчиком, заказать сайт, заказать android приложение, заказать iOS приложение, заказать desktop приложение">
+    <meta name="description" content="Вся информация о Лиге Разработчиков НИТУ МИСиС.">
+    <link rel="apple-touch-icon" sizes="57x57" href="imgs/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="imgs/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="imgs/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="imgs/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="imgs/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="imgs/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="imgs/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="imgs/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="imgs/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="imgs/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="imgs/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="imgs/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="imgs/favicons/manifest.json">
+    <link rel="mask-icon" href="imgs/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="shortcut icon" href="imgs/favicons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffc40d">
+    <meta name="msapplication-TileImage" content="imgs/favicons/mstile-144x144.png">
+    <meta name="msapplication-config" content="imgs/favicons/browserconfig.xml">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
-<page-header isblack="true"></page-header>
-<div class="content">
-  <h1 class="projects-section__headline headline">О нас</h1>
-  <div class="dividing-line"></div>
-  <div>
-    <div class="about-logo">
-    <img class="about-logo-img" src="imgs/favicons/android-chrome-192x192.png">
-    <div class="about-logo-text">ЛИГА РАЗРАБОТЧИКОВ</div>
+
+<div class="wrapper about-wrapper">
+    <page-header isblack="true"></page-header>
+    <div class="about-heading">
+        <div class="about-logo"></div>
+        <div class="dividing-line"></div>
     </div>
-  </div>
-  <div class="dividing-line"></div>
-  <div class="about-wrap-content">
-    <div class="about-content">
-      <div class="about-points point-1">
-        <div class="about-numbers number-1"><span>1</span></div>
-        <div class="about-text text-1">
-          <p class="heading">О нас</p>
-          <p class="text">
-            Мы — студенты НИТУ МИСиС, выбравшие IT в качестве сферы профессионального развития.
-            В Лиге Разработчиков мы работаем над программными проектами в таких сферах как: веб,
-            мобильные платформы, десктоп, серверные приложения, игры. Мы не ограничиваем себя и
-            не стоим на месте, постоянно развиваемся и ищем новые сферы применения своих способностей.
-          </p>
+    <div class="about-wrap-content">
+        <div class="about-content">
+            <div class="about-points">
+                <div class="about-numbers left-number"><span>1</span></div>
+                <div class="about-text right-text">
+                    <p class="heading">О нас</p>
+
+                    <p class="text">
+                        Мы — студенты НИТУ МИСиС, выбравшие IT в качестве сферы профессионального развития.
+                        В Лиге Разработчиков мы работаем над программными проектами в таких сферах как: веб,
+                        мобильные платформы, десктоп, серверные приложения, игры. Мы не ограничиваем себя и
+                        не стоим на месте, постоянно развиваемся и ищем новые сферы применения своих способностей.
+                    </p>
+                </div>
+            </div>
+            <div class="lines ">
+                <div class="line-1-2 block-1"></div>
+                <div class="line-1-2 block-2"></div>
+            </div>
+            <div class="about-points">
+                <div class="about-numbers right-number"><span>2</span></div>
+                <div class="about-text left-text">
+                    <p class="heading">Цель</p>
+
+                    <p class="text">
+                        Цель организации — собрать всех мотивированных и целеустремлённых студентов для того,
+                        чтобы вырастить из них IT специалистов. При поддержке Лиги наши студенты работают над
+                        реальными или приближенными к реальности проектами разного масштаба, учатся работать
+                        в команде и доводить своё дело до конца. Мы проходим путь, который должен пройти
+                        каждый разработчик и к концу обучения в институте мы становимся опытными, готовыми
+                        к работе специалистами, которых так не хватает на рынке труда.
+                    </p>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="line-2-3 block-1"></div>
+                <div class="line-2-3 block-2"></div>
+            </div>
+            <div class="about-points">
+                <div class="about-numbers left-number"><span>3</span></div>
+                <div class="about-text right-text">
+                    <p class="heading">Кто это придумал?</p>
+
+                    <p class="text">
+                        Организация была основана в сентябре 2014 года студентом института информационных технологий
+                        и автоматизированных систем управления Маргеловым Виталием. При минимальной поддержке
+                        от руководства института организация собрала более ста человек.
+                    </p>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="line-3-4 block-1"></div>
+                <div class="line-3-4 block-2"></div>
+            </div>
+            <div class="about-points">
+                <div class="about-numbers right-number"><span>4</span></div>
+                <div class="about-text left-text">
+                    <p class="heading">К кому обращаться для сотрудничества?</p>
+
+                    <p class="text">
+                        Лига Разработчиков ищет неравнодушных людей, готовых вступить в её ряды или открытых для
+                        сотрудничества
+                        в данной сфере. Для того, чтобы связаться с руководством, воспользуйтесь
+                        <a href="order.html">формой обратной связи</a>,
+                        для вступления в ряды разработчиков -
+                        <a href="signup.html">зарегистрируйтесь на сайте</a>.
+                    </p>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="line-4-5 block-1"></div>
+                <div class="line-4-5 block-2"></div>
+            </div>
+            <div class="about-points">
+                <div class="about-numbers left-number"><span>5</span></div>
+                <div class="about-text right-text">
+                    <p class="heading">Обучение и внутривузовская деятельность</p>
+
+                    <p class="text">
+                        Помимо основной деятельности, связанной с работой над проектами, Лига Разработчиков
+                        организовывает сессионные образовательные мероприятия. Для чтения предметных лекций
+                        приглашаются студенты, выпускники и преподаватели НИТУ МИСиС. Также Лига всячески
+                        поддерживает любую внутривузовскую активность, касающуюся IT, и осуществляет
+                        информационную и агитационную поддержку для любых проявлений подобной активности.
+                    </p>
+                </div>
+            </div>
+            <div class="lines">
+                <div class="line-1-2 block-1"></div>
+                <div class="line-1-2 block-2"></div>
+            </div>
+            <div class="about-points">
+                <div class="about-numbers right-number"><span>6</span></div>
+                <div class="about-text left-text">
+                    <p class="heading">Как нас найти?</p>
+
+                    <p class="text">
+                        Наш офис находится в Лингвистическом корпусе Горного Института, аудитория Г-588.
+                        Пройдя через вход в корпус, пройдите турникет, поверните направо и снова направо.
+                        По лестнице или на лифте поднимитесь на пятый этаж. Выйдя с лестничной клетки пройдите по
+                        коридору налево. Идите прямо до тех пор, пока не обнаружите с правой стороны коридора дверь
+                        с номером Г-588. Вы на месте!
+                    </p>
+                </div>
+            </div>
+            <div class="about-yandex-map">
+                <script type="text/javascript" charset="utf-8"
+                        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=z8NmOrCeCmyqTWQA_vBpOtTc7DLmI194&width=100%&height=450&lang=ru_RU&sourceType=constructor"></script>
+            </div>
         </div>
-      </div>
-      <div class="lines line-1-2">
-        <div class="block-1"></div>
-        <div class="block-2"></div>
-      </div>
-      <div class="about-points point-2">
-        <div class="about-numbers number-2"><span>2</span></div>
-        <div class="about-text text-2">
-          <p class="heading">Цель</p>
-          <p class="text">
-            Цель организации — собрать всех мотивированных и целеустремлённых студентов для того,
-            чтобы вырастить из них IT специалистов. При поддержке Лиги наши студенты работают над
-            реальными или приближенными к реальности проектами разного масштаба, учатся работать
-            в команде и доводить своё дело до конца. Мы проходим путь, который должен пройти
-            каждый разработчик и к концу обучения в институте мы становимся опытными, готовыми
-            к работе специалистами, которых так не хватает на рынке труда.
-          </p>
-        </div>
-      </div>
-      <div class="lines line-2-3">
-        <div class="block-1"></div>
-        <div class="block-2"></div>
-      </div>
-      <div class="about-points point-3">
-        <div class="about-numbers number-3"><span>3</span></div>
-        <div class="about-text text-3">
-          <p class="heading">Кто это придумал?</p>
-          <p class="text">
-            Организация была основана в сентябре 2014 года студентом института информационных технологий
-            и автоматизированных систем управления Маргеловым Виталием. При минимальной поддержке
-            от руководства института организация собрала более ста человек.
-          </p>
-        </div>
-      </div>
-      <div class="lines line-3-4">
-        <div class="block-1"></div>
-        <div class="block-2"></div>
-      </div>
-      <div class="about-points point-4">
-        <div class="about-numbers number-4"><span>4</span></div>
-        <div class="about-text text-4">
-          <p class="heading">К кому обращаться для сотрудничества?</p>
-          <p class="text">
-            Лига Разработчиков ищет неравнодушных людей, готовых вступить в её ряды или открытых для сотрудничества
-            в данной сфере. Для того, чтобы связаться с руководством, воспользуйтесь формой обратной связи,
-            для вступления в ряды разработчиков - зарегистрируйтесь на сайте.
-          </p>
-          <p><a href="order.html">Заказать проект</a></p>
-          <p><a href="#">Подать заявку на вступление</a> </p>
-        </div>
-      </div>
-      <div class="lines line-4-5">
-        <div class="block-1"></div>
-        <div class="block-2"></div>
-      </div>
-      <div class="about-points point-5">
-        <div class="about-numbers number-5"><span>5</span></div>
-        <div class="about-text text-5">
-          <p class="heading">Обучение и внутривузовская деятельность</p>
-          <p class="text">
-            Помимо основной деятельности, связанной с работой над проектами, Лига Разработчиков
-            организовывает сессионные образовательные мероприятия. Для чтения предметных лекций
-            приглашаются студенты, выпускники и преподаватели НИТУ МИСиС. Также Лига всячески
-            поддерживает любую внутривузовскую активность, касающуюся IT, и осуществляет
-            информационную и агитационную поддержку для любых проявлений подобной активности.
-          </p>
-        </div>
-      </div>
-      <div class="lines line-5-6 line-1-2">
-        <div class="block-1"></div>
-        <div class="block-2"></div>
-      </div>
-      <div class="about-points point-6">
-        <div class="about-numbers number-6"><span>6</span></div>
-        <div class="about-text text-6">
-          <p class="heading">Как нас найти?</p>
-          <p class="text">
-            Наш офис находится в Лингвистическом корпусе Горного Института, аудитория Г-588.
-            Пройдя через вход в корпус, пройдите турникет, поверните направо и снова направо.
-            По лестнице или на лифте поднимитесь на пятый этаж. Выйдя с лестничной клетки пройдите по
-            коридору налево. Идите прямо до тех пор, пока не обнаружите с правой стороны коридора дверь
-            с номером Г-588. Вы на месте!
-          </p>
-        </div>
-      </div>
-      <div class="about-yandex-map">
-        <script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=z8NmOrCeCmyqTWQA_vBpOtTc7DLmI194&width=100%&height=450&lang=ru_RU&sourceType=constructor"></script>
-      </div>
     </div>
+    <page-footer></page-footer>
 </div>
-<page-footer></page-footer>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <script src="app/app.js"></script>
-<script src="app/controllers.js"></script>
 <script src="app/directives.js"></script>
+<script src="app/controllers.js"></script>
 </body>
 </html>
