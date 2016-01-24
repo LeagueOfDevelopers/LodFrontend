@@ -788,7 +788,6 @@ footer {
         border-color: #2980b9;
     }
 
-    /*<<<<<<< HEAD*/
     /*about*/
     /*about*/
 --> /*heading*/
@@ -818,16 +817,16 @@ footer {
     }
 
     .about-points {
+        display: flex;
+        position: relative;
+        justify-content: space-between;
+        align-items: center;
         margin: 0 2%;
-    }
-
-    .right-number, .right-text {
-        float: right;
     }
 
     .about-numbers {
         display: inline-block;
-        margin-bottom: 0;
+        margin: 0;
         width: 200px;
         height: 200px;
         font-size: 127px;
@@ -838,6 +837,50 @@ footer {
         padding: 20px;
         max-width: 65%;
         min-height: 160px;
+    }
+
+    .right-text::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 10px;
+        top: 0;
+        left: 105px;
+        background-color: white;
+    }
+
+    .first-text::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 10px;
+        top: 50%;
+        left: 105px;
+        background-color: white;
+    }
+
+    .left-text::after{
+        content: '';
+        display: block;
+        position: absolute;
+        height: 100%;
+        width: 10px;
+        top: 0;
+        right: 105px;
+        background-color: white;
+    }
+
+    .last-text::before {
+        content: '';
+        display: block;
+        position: absolute;
+        height: 50%;
+        width: 10px;
+        top: 0;
+        right: 105px;
+        background-color: white;
     }
 
     .about-text .heading {
