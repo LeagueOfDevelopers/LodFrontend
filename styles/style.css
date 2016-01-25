@@ -441,7 +441,9 @@ header {
     margin: 15px auto 30px auto;
 }
 
-/*about*/
+/*************************
+        ABOUT
+*************************/
 
 /*about*/
 -->
@@ -494,7 +496,7 @@ header {
 }
 
 .about-text {
-    padding: 60px 5% 5% 5%;
+    padding: 60px 5% 5%;
     background-color: white;
     text-align: left;
 }
@@ -595,7 +597,10 @@ footer {
         width: 240px;
     }
 
-    /*about*/
+    /*************************
+            ABOUT
+    *************************/
+
     .about-logo {
         max-width: 90%;
         background: url("../imgs/logo-ver2-black.png") no-repeat center;
@@ -788,7 +793,9 @@ footer {
         border-color: #2980b9;
     }
 
-    /*about*/
+    /*************************
+            ABOUT
+    *************************/
     /*about*/
 --> /*heading*/
     .about-wrapper {
@@ -822,6 +829,14 @@ footer {
         justify-content: space-between;
         align-items: center;
         margin: 0 2%;
+    }
+
+    .left-text{
+        order: 0;
+    }
+
+    .right-number{
+        order: 1;
     }
 
     .about-numbers {
